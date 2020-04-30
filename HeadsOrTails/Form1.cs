@@ -16,9 +16,9 @@ using System.Windows.Forms;
 
 namespace HeadsOrTails
 {
-    public partial class Form1 : Form
+    public partial class FormCoinToss : Form
     {
-        public Form1()
+        public FormCoinToss()
         {
             InitializeComponent();
         }
