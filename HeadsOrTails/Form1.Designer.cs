@@ -44,6 +44,7 @@
             this.buttonHeads.TabIndex = 0;
             this.buttonHeads.Text = "Show Heads";
             this.buttonHeads.UseVisualStyleBackColor = true;
+            this.buttonHeads.Click += new System.EventHandler(this.buttonHeads_Click);
             // 
             // buttonTails
             // 
@@ -53,6 +54,7 @@
             this.buttonTails.TabIndex = 1;
             this.buttonTails.Text = "Show Tails";
             this.buttonTails.UseVisualStyleBackColor = true;
+            this.buttonTails.Click += new System.EventHandler(this.buttonTails_Click);
             // 
             // pictureBoxHeads
             // 
@@ -63,6 +65,7 @@
             this.pictureBoxHeads.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHeads.TabIndex = 2;
             this.pictureBoxHeads.TabStop = false;
+            this.pictureBoxHeads.Visible = false;
             // 
             // pictureBoxTails
             // 
@@ -73,6 +76,7 @@
             this.pictureBoxTails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxTails.TabIndex = 3;
             this.pictureBoxTails.TabStop = false;
+            this.pictureBoxTails.Visible = false;
             // 
             // FormCoinToss
             // 
@@ -84,6 +88,7 @@
             this.Controls.Add(this.buttonTails);
             this.Controls.Add(this.buttonHeads);
             this.Name = "FormCoinToss";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Coin Toss";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeads)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTails)).EndInit();

@@ -22,5 +22,17 @@ namespace HeadsOrTails
         {
             InitializeComponent();
         }
+
+        private void buttonHeads_Click(object sender, EventArgs e)
+        {
+            pictureBoxHeads.Visible = true;
+            pictureBoxTails.Visible = false;
+        }
+
+        private void buttonTails_Click(object sender, EventArgs e)
+        {
+            pictureBoxTails.Visible = true;
+            pictureBoxHeads.Visible = false;
+        }
     }
 }
